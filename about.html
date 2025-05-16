@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT ADT Hospital - About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animation styles as in the original HTML */
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+
+      50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .fade-in {
+      animation: fadeSlideIn 0.8s ease-out;
+    }
+
+    .scale-in {
+      animation: scaleIn 0.6s ease-out;
+    }
+
+    .bounce-in {
+      animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold text-purple-600 bounce-in mb-4 md:mb-0">Health Optimiser</h1>
+        
+        <!-- Main Navigation -->
+        <nav class="hidden md:flex items-center">
+          <div class="flex space-x-1 bg-gray-100 rounded-lg p-1">
+            <a href="home.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Home</a>
+            <a href="about.html" class="bg-white shadow-sm text-purple-600 px-4 py-2 rounded-md transition-all duration-200 fade-in">About</a>
+            <a href="services.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Services</a>
+            <a href="contact.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Contact</a>
+            <a href="faq.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">FAQ</a>
+          </div>
+          
+          <!-- Health Services Navigation -->
+          <div class="flex space-x-1 bg-gray-100 rounded-lg p-1 ml-4">
+            <a href="progress-tracking.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Progress</a>
+            <a href="health-passport.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Passport</a>
+            <a href="health-recommendations.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Recommendations</a>
+            <a href="online-medication.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Medication</a>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- User Actions -->
+      <div class="flex justify-center md:justify-end mt-4 md:mt-0">
+        <div class="flex items-center space-x-3">
+          <a href="user-profile.html" class="bg-gray-100 px-3 py-1 rounded-full text-sm cursor-pointer flex items-center mr-3 hover:bg-purple-100 transition-all duration-200 group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            <span class="text-gray-700 group-hover:hidden">Welcome, Guest</span>
+            <span class="text-purple-700 hidden group-hover:inline font-medium">View Profile</span>
+          </a>
+          <a href="child-care.html" class="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600 transition-colors duration-200 mr-2 scale-in flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            Child Care
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="bg-purple-50 py-16 fade-in">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Left Column -->
+        <div class="flex-1 mb-8 md:mb-0">
+          <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-4 fade-in">
+            About Us
+          </h2>
+          <p class="text-gray-600 mb-6 fade-in">
+            At Health Optimiser, we believe in providing high-quality healthcare services with compassion and professionalism. Our team of experienced doctors and healthcare professionals work together to ensure the best care for all patients.
+          </p>
+          <h3 class="text-2xl font-bold text-purple-700 mb-2 fade-in">Our Mission</h3>
+          <p class="text-gray-600 mb-6 fade-in">
+            Our mission is to provide accessible, efficient, and effective healthcare solutions to individuals and communities. We aim to be the healthcare provider of choice by delivering quality services that cater to the needs of every patient.
+          </p>
+          <h3 class="text-2xl font-bold text-purple-700 mb-2 fade-in">Our Vision</h3>
+          <p class="text-gray-600 mb-6 fade-in">
+            Our vision is to transform healthcare delivery by embracing innovation and patient-centered care. We aspire to be a leader in healthcare by continually improving our services, technology, and the patient experience.
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex-1 flex justify-center scale-in">
+          <img src="about-us-image.jpeg" alt="Healthcare Team" class="rounded-lg shadow-lg max-w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-4">
+    <div class="container mx-auto px-4 text-center text-gray-500 fade-in">
+      &copy; 2024 Health Optimiser. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

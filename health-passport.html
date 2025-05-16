@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Passport - Health Optimiser</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .bounce-in {
+      animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold text-purple-600 bounce-in mb-4 md:mb-0">Health Optimiser</h1>
+        
+        <!-- Main Navigation -->
+        <nav class="hidden md:flex items-center">
+          <div class="flex space-x-1 bg-gray-100 rounded-lg p-1">
+            <a href="home.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">About</a>
+            <a href="services.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Services</a>
+            <a href="contact.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Contact</a>
+            <a href="faq.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">FAQ</a>
+          </div>
+          
+          <!-- Health Services Navigation -->
+          <div class="flex space-x-1 bg-gray-100 rounded-lg p-1 ml-4">
+            <a href="progress-tracking.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Progress</a>
+            <a href="health-passport.html" class="bg-white shadow-sm text-purple-600 px-4 py-2 rounded-md transition-all duration-200 fade-in">Passport</a>
+            <a href="health-recommendations.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Recommendations</a>
+            <a href="online-medication.html" class="text-gray-700 hover:text-purple-500 px-4 py-2 rounded-md transition-all duration-200 fade-in">Medication</a>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- User Actions -->
+      <div class="flex justify-center md:justify-end mt-4 md:mt-0">
+        <div class="flex items-center space-x-3">
+          <a href="user-profile.html" class="bg-gray-100 px-3 py-1 rounded-full text-sm cursor-pointer flex items-center mr-3 hover:bg-purple-100 transition-all duration-200 group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            <span class="text-gray-700 group-hover:hidden">Welcome, Guest</span>
+            <span class="text-purple-700 hidden group-hover:inline font-medium">View Profile</span>
+          </a>
+          <a href="child-care.html" class="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600 transition-colors duration-200 mr-2 scale-in flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            Child Care
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Health Passport Section -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-purple-700 mb-8 text-center">Your Health Passport</h2>
+      
+      <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row items-start gap-8">
+          <!-- User Profile -->
+          <div class="w-full md:w-1/3">
+            <div class="bg-purple-50 p-6 rounded-lg text-center">
+              <div class="w-32 h-32 bg-purple-200 rounded-full mx-auto flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-purple-700 mt-4">Demo User</h3>
+              <p class="text-gray-600">ID: HEALTH-12345</p>
+              <p class="text-gray-600">Age: 35</p>
+              <p class="text-gray-600">Blood Type: O+</p>
+              <p class="text-gray-600">Height: 175 cm</p>
+              <p class="text-gray-600">Weight: 70 kg</p>
+            </div>
+          </div>
+          
+          <!-- Health Records -->
+          <div class="w-full md:w-2/3">
+            <h3 class="text-2xl font-bold text-purple-700 mb-4">Health Records</h3>
+            
+            <!-- Tabs -->
+            <div class="border-b border-gray-200 mb-6">
+              <ul class="flex flex-wrap -mb-px">
+                <li class="mr-2">
+                  <a href="#" class="inline-block py-2 px-4 text-purple-600 border-b-2 border-purple-600 font-medium">Medical History</a>
+                </li>
+                <li class="mr-2">
+                  <a href="#" class="inline-block py-2 px-4 text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300">Vaccinations</a>
+                </li>
+                <li class="mr-2">
+                  <a href="#" class="inline-block py-2 px-4 text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300">Allergies</a>
+                </li>
+                <li class="mr-2">
+                  <a href="#" class="inline-block py-2 px-4 text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300">Medications</a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Medical History Content -->
+            <div>
+              <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h4 class="text-lg font-semibold text-purple-700">Annual Health Checkup</h4>
+                    <p class="text-gray-600">Dr. Sharma, General Physician</p>
+                  </div>
+                  <span class="text-gray-500">15 Jan 2024</span>
+                </div>
+                <p class="mt-2 text-gray-700">Routine health checkup. All vitals normal. Recommended regular exercise and balanced diet.</p>
+              </div>
+              
+              <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h4 class="text-lg font-semibold text-purple-700">Dental Examination</h4>
+                    <p class="text-gray-600">Dr. Patel, Dentist</p>
+                  </div>
+                  <span class="text-gray-500">03 Dec 2023</span>
+                </div>
+                <p class="mt-2 text-gray-700">Routine dental checkup. No cavities found. Recommended regular flossing.</p>
+              </div>
+              
+              <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h4 class="text-lg font-semibold text-purple-700">Eye Examination</h4>
+                    <p class="text-gray-600">Dr. Gupta, Ophthalmologist</p>
+                  </div>
+                  <span class="text-gray-500">10 Oct 2023</span>
+                </div>
+                <p class="mt-2 text-gray-700">Vision test performed. Slight myopia detected. Prescribed glasses for reading and screen work.</p>
+              </div>
+              
+              <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-md hover:bg-purple-200 transition-colors duration-200">View More Records</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-4">
+    <div class="container mx-auto px-4 text-center text-gray-500">
+      &copy; 2024 Health Optimiser. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
